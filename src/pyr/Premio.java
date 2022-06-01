@@ -32,12 +32,16 @@ public class Premio {
 				break;
 			case 2:
 				lvlp = 200;
+				break;
 			case 3:
 				lvlp = 300;
+				break;
 			case 4:
 				lvlp = 400;
+				break;
 			case 5:
 				lvlp = 500;
+				break;
 		}
 		return lvlp;
 	}

@@ -22,6 +22,10 @@ public class Nivel {
 		this.nivel = nivel;
 	}
 	
+	public void siguientNivel() {
+		this.nivel++;
+	}
+	
 	public Categorias getCat() {
 		return cat;
 	}

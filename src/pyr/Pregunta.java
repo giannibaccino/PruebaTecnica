@@ -3,9 +3,9 @@ package pyr;
 public class Pregunta {
 	private String enunciado;
 	private Respuestas respuesta;
-	private int correcta;
+	private char correcta;
 
-	public Pregunta(String enunciado, Respuestas respuesta, int correcta) {
+	public Pregunta(String enunciado, Respuestas respuesta, char correcta) {
 		super();
 		this.enunciado = enunciado;
 		this.respuesta = respuesta;
@@ -28,11 +28,11 @@ public class Pregunta {
 		this.respuesta = respuesta;
 	}
 
-	public int getCorrecta() {
+	public char getCorrecta() {
 		return correcta;
 	}
 
-	public void setCorrecta(int correcta) {
+	public void setCorrecta(char correcta) {
 		this.correcta = correcta;
 	}
 }
