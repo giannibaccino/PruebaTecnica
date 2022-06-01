@@ -36,112 +36,112 @@ public class Categorias {
 		
 		switch (nivel) {
 			case 1:
-				respuesta = new Respuestas(new String[] {"Ecuador","Chile","Venezuela","Boliva"});
-				pregunta = new Pregunta("¿Qué país está entre Perú y Colombia?", respuesta, '1');
+				respuesta = new Respuestas(new String[] {"Ecuador","Chile","Venezuela","Bolivia"});
+				pregunta = new Pregunta("Que pais esta entre Peru y Colombia?", respuesta, '1');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Rojo, azul, violeta, negro y blanco","Amarillo, azul, negro, rojo y verde","Naranja, verde, azul, rojo y blanco","Negro, blanco, marrón, amarillo y azul"});
-				pregunta = new Pregunta("¿Cuáles son los colores de los cinco anillos olímpicos?", respuesta, '2');
+				pregunta = new Pregunta("Cuales son los colores de los cinco anillos olimpicos?", respuesta, '2');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Yohan Blake","Asafa Powell","Usain Bolt","Justin Gatlin"});
-				pregunta = new Pregunta("¿Qué atleta ostenta el récord de los 100 metros lisos?", respuesta, '3');
+				pregunta = new Pregunta("Que atleta ostenta el record de los 100 metros lisos?", respuesta, '3');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Nueve","Cuatro","Once","Seis"});
-				pregunta = new Pregunta("¿Cuántos jugadores hay en un equipo de voleibol?", respuesta, '4');
+				pregunta = new Pregunta("Cuantos jugadores hay en un equipo de voleibol?", respuesta, '4');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Grecia","Italia","Hawaii","Tailandia"});//5
-				pregunta = new Pregunta("¿A qué país pertenece la isla de Creta?", respuesta, '1');
+				pregunta = new Pregunta("A que pais pertenece la isla de Creta?", respuesta, '1');
 				preguntas.add(pregunta);
 				break;
 				
 			case 2:
-				respuesta = new Respuestas(new String[] {"El Río de la Plata","El Río Amazonas","El Río Misisipi","El Río Orinoco"});
-				pregunta = new Pregunta("¿Cuál es el río más caudaloso del mundo?", respuesta, '2');
+				respuesta = new Respuestas(new String[] {"El Rio de la Plata","El Rio Amazonas","El Rio Misisipi","El Rio Orinoco"});
+				pregunta = new Pregunta("Cual es el rio mas caudaloso del mundo?", respuesta, '2');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Steven","Edward","Vincent","Horace"});
-				pregunta = new Pregunta("¿Con qué nombre firmaba Van Gogh sus obras?", respuesta, '3');
+				pregunta = new Pregunta("Con que nombre firmaba Van Gogh sus obras?", respuesta, '3');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Hidrógeno","Oxígeno","Metano","Ozono"});
-				pregunta = new Pregunta("¿Qué gas de la atmósfera nos protege de la radiación ultravioleta?", respuesta, '4');
+				respuesta = new Respuestas(new String[] {"Hidrogeno","Oxigeno","Metano","Ozono"});
+				pregunta = new Pregunta("Que gas de la atmosfera nos protege de la radiacion ultravioleta?", respuesta, '4');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Ácido desoxirribonucleico","Ácido dentro nuesto","Ácido desoxidante neutral","Ácido dióniconerval"});
-				pregunta = new Pregunta("¿Qué significan las siglas ADN?", respuesta, '1');
+				respuesta = new Respuestas(new String[] {"Acido desoxirribonucleico","Acido dentro nuesto","Acido desoxidante neutral","Acido dióniconerval"});
+				pregunta = new Pregunta("Que significan las siglas ADN?", respuesta, '1');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"La Cenicienta","Blancanieves","Monster Inc.","Toy Story"});//10
-				pregunta = new Pregunta("¿Cuál fue la primera película de Disney?", respuesta, '2');
+				pregunta = new Pregunta("Cual fue la primera pelicula de Disney?", respuesta, '2');
 				preguntas.add(pregunta);
 				break;
 		
 			case 3:
 				respuesta = new Respuestas(new String[] {"Mario Benedetti","John Donne","William Shakespeare","Horacio Quiroga"});
-				pregunta = new Pregunta("¿Quién escribió “Sueño de una noche de verano”?", respuesta, '3');
+				pregunta = new Pregunta("Quien escribio “Sueno de una noche de verano”?", respuesta, '3');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"128","110","120","118"});
-				pregunta = new Pregunta("¿Cuántos elementos tiene la tabla periódica?", respuesta, '4');
+				pregunta = new Pregunta("Cuantos elementos tiene la tabla periodica?", respuesta, '4');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Cassius Clay","Jon Jones","Kamaru Usman","Israel Adesanya"});
-				pregunta = new Pregunta("¿Cómo se llamaba Muhammad Ali antes de adoptar este nombre?", respuesta, '1');
+				pregunta = new Pregunta("Como se llamaba Muhammad Ali antes de adoptar este nombre?", respuesta, '1');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Italia","Inglaterra","China","Japón"});
-				pregunta = new Pregunta("¿Dónde se inventó el Ping-Pong?", respuesta, '2');
+				respuesta = new Respuestas(new String[] {"Italia","Inglaterra","China","Japon"});
+				pregunta = new Pregunta("Donde se invento el Ping-Pong?", respuesta, '2');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Watson Street","Manila Street","Baker Street","Parker Street"});//15
-				pregunta = new Pregunta("¿En qué calle ficticia vivía Sherlock Holmes?", respuesta, '3');
+				pregunta = new Pregunta("En que calle ficticia vivia Sherlock Holmes?", respuesta, '3');
 				preguntas.add(pregunta);
 				break;
 			
 			case 4:	
 				respuesta = new Respuestas(new String[] {"1989","1976","1990","1969"});
-				pregunta = new Pregunta("¿¿En qué año llegó el hombre a la Luna?", respuesta, '4');
+				pregunta = new Pregunta("En que ano llego el hombre a la Luna?", respuesta, '4');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Italia","China","Suiza","Alemania"});
-				pregunta = new Pregunta("¿En qué país se encuentra el río Po?", respuesta, '1');
+				pregunta = new Pregunta("En que pais se encuentra el rio Po?", respuesta, '1');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"64","50","47","55"});
-				pregunta = new Pregunta("¿Por cuántos estados está formado Estados Unidos?", respuesta, '2');
+				pregunta = new Pregunta("Por cuantos estados esta formado Estados Unidos?", respuesta, '2');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Oxígeno","Hidrógeno","Carbono","Hierro"});
-				pregunta = new Pregunta("¿Qué elemento está presente en absolutamente todas las moléculas orgánicas?", respuesta, '3');
+				respuesta = new Respuestas(new String[] {"Oxigeno","Hidrogeno","Carbono","Hierro"});
+				pregunta = new Pregunta("Que elemento esta presente en absolutamente todas las moleculas organicas?", respuesta, '3');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Carbono","Nitrógeno","Oxígeno","Hidrógeno"});//20
-				pregunta = new Pregunta("¿Cuál es el elemento más abundante de la Tierra?", respuesta, '4');
+				respuesta = new Respuestas(new String[] {"Carbono","Nitrogeno","Oxigeno","Hidrogeno"});//20
+				pregunta = new Pregunta("Cual es el elemento mas abundante de la Tierra?", respuesta, '4');
 				preguntas.add(pregunta);
 				break;
 						
 			case 5:
-				respuesta = new Respuestas(new String[] {"La Santa María","La Pinta","La Niña","Todas regresaron"});
-				pregunta = new Pregunta("¿Qué carabela no regresó del primer viaje de Colón al Nuevo Mundo?", respuesta, '1');
+				respuesta = new Respuestas(new String[] {"La Santa Maria","La Pinta","La Nina","Todas regresaron"});
+				pregunta = new Pregunta("Que carabela no regreso del primer viaje de Colon al Nuevo Mundo?", respuesta, '1');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Paris","Venecia","Alejandria","Roma"});
-				pregunta = new Pregunta("¿Cuál era la ciudad hogar de Marco Polo?", respuesta, '2');
+				pregunta = new Pregunta("Cual era la ciudad hogar de Marco Polo?", respuesta, '2');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"La Última Guerra","La Primer Guerra","La Gran Guerra","La Guerra Final"});
-				pregunta = new Pregunta("¿Cómo se conocía la Primera Guerra Mundial antes de que estallara la segunda?", respuesta, '3');
+				respuesta = new Respuestas(new String[] {"La Ultima Guerra","La Primer Guerra","La Gran Guerra","La Guerra Final"});
+				pregunta = new Pregunta("Como se conocia la Primera Guerra Mundial antes de que estallara la segunda?", respuesta, '3');
 				preguntas.add(pregunta);
 				
 				respuesta = new Respuestas(new String[] {"Continua como Stalingrado","Volingrado","Skrolingrado","Volgogrado"});
-				pregunta = new Pregunta("¿Cómo se llama a día de hoy la antigua ciudad de Stalingrado?", respuesta, '4');
+				pregunta = new Pregunta("Como se llama a dia de hoy la antigua ciudad de Stalingrado?", respuesta, '4');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Platón","Aristóteles","Sócrates","Tales de Mileto"});//25
-				pregunta = new Pregunta("¿Qué filósofo creó “El mito de la caverna”?", respuesta, '1');
+				respuesta = new Respuestas(new String[] {"Platon","Aristoteles","Socrates","Tales de Mileto"});//25
+				pregunta = new Pregunta("Que filosofo creo “El mito de la caverna”?", respuesta, '1');
 				preguntas.add(pregunta);
 				break;
 		}

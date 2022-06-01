@@ -5,13 +5,11 @@ import java.util.*;
 public class Nivel {
 	private int nivel;
 	private Categorias cat;
-	private Premio premio;
 	
-	public Nivel(int nivel, Categorias cat, Premio premio) {
+	public Nivel(int nivel, Categorias cat) {
 		super();
 		this.nivel = nivel;
 		this.cat = cat;
-		this.premio = premio;
 	}
 
 	public int getNivel() {
@@ -33,15 +31,7 @@ public class Nivel {
 	public void setCat(Categorias cat) {
 		this.cat = cat;
 	}
-	
-	public Premio getPremio() {
-		return premio;
-	}
-	
-	public void setPremio(Premio premio) {
-		this.premio = premio;
-	}
-	
+		
 	public Pregunta selectRandomPreg() {
 		int min_val = 0;
         int max_val = 5;
