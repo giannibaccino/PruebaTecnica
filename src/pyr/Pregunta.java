@@ -1,6 +1,6 @@
 package pyr;
 
-public class Pregunta {
+public class Pregunta { //Las preguntas contienen el enunciado su arreglo de respuestas y un char (numero) que corresponde la ubicacion en el arreglo de la respuesta correcta (respuestas[correcta])
 	private String enunciado;
 	private Respuestas respuesta;
 	private char correcta;

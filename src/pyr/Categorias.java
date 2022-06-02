@@ -2,7 +2,7 @@ package pyr;
 
 import java.util.*;
 
-public class Categorias {
+public class Categorias { //Las categorias consisten en una lista de preguntas segun el nivel en el que se esta
 	private int nivel;
 	private List<Pregunta> pregs;
 	
@@ -28,7 +28,7 @@ public class Categorias {
 		this.nivel++;
 	}
 	
-	public List<Pregunta> crearCategoria(int nivel) {
+	public List<Pregunta> crearCategoria(int nivel) {//Se crean las categorias segun el nivel requerido
 		Pregunta pregunta;
 		Respuestas respuesta;
 		

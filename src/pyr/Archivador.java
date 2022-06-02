@@ -3,7 +3,7 @@ package pyr;
 import java.io.*;
 
 public class Archivador {
-	public void leer() {  //Lee las lineas del archivo registros.txt
+	public void leer() {  //Lee las lineas del archivo registros.txt*
 		try {
 			FileReader entrada = new FileReader("./registros.txt");
 			

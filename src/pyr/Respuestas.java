@@ -1,6 +1,6 @@
 package pyr;
 
-public class Respuestas {
+public class Respuestas { //Las respuestas son un arreglo de elementos String (siempre de largo 4 en este caso)
 	private String[] posibles;
 
 	public Respuestas(String[] posibles) {

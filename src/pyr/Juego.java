@@ -6,14 +6,14 @@ import java.util.*;
 
 public class Juego {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Se ejecuta el juego
 		int lvl = 1;
 		Premio premioTotal = new Premio(0);
 		
 		Scanner leer = new Scanner(System.in);
 		System.out.println("Bienvenido al TriviaQuest! \nIngresa un nombre de usuario para comenzar a jugar");
 		String nombreuser = leer.nextLine();
-		Usuario usuario = new Usuario(nombreuser,premioTotal);
+		Usuario usuario = new Usuario(nombreuser,premioTotal); //Se inicializa el usuario
 		
 		while (nombreuser.isBlank()) {
 			System.out.println("Porfavor ingresa un nombre de usuario");
@@ -21,7 +21,7 @@ public class Juego {
 		}
 		boolean correcto = true;
 		
-		while (correcto && lvl<=5) {
+		while (correcto && lvl<=5) { //Se generan las preguntas
 			Categorias categoria = new Categorias(lvl);
 			Nivel nivel = new Nivel(lvl, categoria);
 			Pregunta preg = nivel.selectRandomPreg();
@@ -69,8 +69,8 @@ public class Juego {
 		}
 		leer.close();
 		
-		DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"); 
         Archivador registro = new Archivador();
-        registro.escribir(usuario.getNombre(), premioTotal.getMonto(), fecha.format(LocalDateTime.now()));
+        registro.escribir(usuario.getNombre(), premioTotal.getMonto(), fecha.format(LocalDateTime.now())); //Se registra el juego
 	}
 }

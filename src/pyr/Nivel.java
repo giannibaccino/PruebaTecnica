@@ -2,7 +2,7 @@ package pyr;
 
 import java.util.*;
 
-public class Nivel {
+public class Nivel {//Los niveles seleccionan la categoria y las preguntas de las mismas
 	private int nivel;
 	private Categorias cat;
 	
@@ -32,7 +32,7 @@ public class Nivel {
 		this.cat = cat;
 	}
 		
-	public Pregunta selectRandomPreg() {
+	public Pregunta selectRandomPreg() { //Se elige una pregunta al azar de la categoria correspondiente al nivel
 		int min_val = 0;
         int max_val = 5;
         Random ran = new Random();
@@ -40,15 +40,15 @@ public class Nivel {
 		return cat.getPregs().get(x);
 	}
 	
-	public String mostrarEnunciado(int n) {
+	public String mostrarEnunciado(int n) { //Se muestra el enunciado de la pregunta n de la categoria correspondiente
 		return cat.getPregs().get(n).getEnunciado();
 	}
 	
-	public Respuestas pickRespuestas(int n) {
+	public Respuestas pickRespuestas(int n) { //Devuelve las repsuerstas de la pregunta n de la categoria correspondiente
 		return cat.getPregs().get(n).getRespuesta();
 	}
 	
-	public String mostrarRespuestas(int pregunta, int numResp) {
+	public String mostrarRespuestas(int pregunta, int numResp) { //Se muestra el enunciado de la respuesta 'numResp' a la pregunta 'pregunta' de la categoria correspondient
 		return cat.getPregs().get(pregunta).getRespuesta().getRespuestaN(numResp);
 	}
 }

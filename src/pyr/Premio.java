@@ -24,7 +24,7 @@ public class Premio {
 		this.monto = 0;
 	}
 	
-	public int premioDeNivel(int nivel) {
+	public int premioDeNivel(int nivel) { // Se fija el premio de cada nivel en esta clase
 		int lvlp = 0;
 		switch (nivel) {
 			case 1: 
