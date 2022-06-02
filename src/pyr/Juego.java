@@ -1,8 +1,11 @@
 package pyr;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Juego {
-	
+
 	public static void main(String[] args) {
 		int lvl = 1;
 		Premio premioTotal = new Premio(0);
@@ -28,17 +31,18 @@ public class Juego {
 			System.out.println("3: " + preg.getRespuesta().getRespuestaN(2));
 			System.out.println("4: " + preg.getRespuesta().getRespuestaN(3));
 			System.out.println();
-			System.out.println(usuario.getNombre() + " Tu puntaje: " + premioTotal.getMonto());
+			System.out.println("Tu puntaje: " + premioTotal.getMonto());
 			System.out.println("Ingresa 'salir' si deseas terminar el juego\n");
 			
 			String respuestauser = leer.nextLine();
 			
 			if (respuestauser.isBlank()) {
 				System.out.println("No ingresaste ninguna respuesta\nFin del juego\nTu puntaje es: 0");
+				premioTotal.reiniciarMonto();
 				correcto = false;
 			}
 			else if (respuestauser.charAt(0) == preg.getCorrecta()) {
-				System.out.println("Respuesta correcta \n\nGanaste " + premioTotal.premioDeNivel(lvl) + " puntos");
+				System.out.println("Respuesta correcta! \n\nGanaste " + premioTotal.premioDeNivel(lvl) + " puntos");
 				System.out.println();
 				premioTotal.sumarMonto(premioTotal.premioDeNivel(lvl));
 				usuario.setPuntaje(premioTotal);
@@ -54,6 +58,7 @@ public class Juego {
 					
 			else {
 				System.out.println("Respuesta incorrecta \nFin del juego\nTu puntaje es: 0");
+				premioTotal.reiniciarMonto();
 				correcto = false;
 			}
 				
@@ -63,5 +68,9 @@ public class Juego {
 			}
 		}
 		leer.close();
+		
+		DateTimeFormatter fecha = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+        Archivador registro = new Archivador();
+        registro.escribir(usuario.getNombre(), premioTotal.getMonto(), fecha.format(LocalDateTime.now()));
 	}
 }
