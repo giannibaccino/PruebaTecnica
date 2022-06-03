@@ -9,4 +9,4 @@ En la clase Archivador existen dos rutas de archivo iguales que estan orientadas
 En registros.txt se alamcenaran los datos de cada juego ejecutado de la forma -usuario->Puntaje:x->Fecha de juego: dd/MM/yyyy HH:mm
 
 Si las respuestas insertadas no cumplen el formato necesario se consideran incorrectas.
-Si deseas salir del juego introduce la palabra salir, el juego lo aclara.
+Si deseas salir del juego introduce la palabra salir, el juego lo aclara.# PruebaTecnica
