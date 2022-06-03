@@ -163,15 +163,17 @@ public class Plataforma extends javax.swing.JFrame {
             new Plataforma();
     }
     
-    public void crearUsuario() { //Se ejecuta el juego
-        Scanner leer = new Scanner(System.in);
+    public void crearUsuario() { //Se ingres el usuario
+    	String nombreuser = JOptionPane.showInputDialog("Bienvenido al TriviaQuest!\nIngresa un nombre de usuario en la consola para comenzar a jugar");
+    	this.usuario = new Usuario(nombreuser,premio);
+        /*Scanner leer = new Scanner(System.in);
 		System.out.println("Bienvenido al TriviaQuest! \nIngresa un nombre de usuario en la consola para comenzar a jugar");
 		String nombreuser = leer.nextLine();
 		this.usuario = new Usuario(nombreuser,premio);
                 while (nombreuser.isBlank()) {
                     System.out.println("Porfavor ingresa un nombre de usuario");
                     nombreuser = leer.nextLine();
-		}
+		}*/
     }
     
     public void mostrarPregunta(String q, String r1, String r2, String r3, String r4, String username, int score){ //Coloca las respouestas en los botones, la pregunta en su label y el puntaje obtenido
@@ -234,12 +236,17 @@ public class Plataforma extends javax.swing.JFrame {
     }
     
     public Plataforma(){ //Interfaz
-        initComponents();
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        crearUsuario();
-        setVisible(true);
-        jugar();
+    	crearUsuario();
+    	if(this.usuario.getNombre() == null) {
+    		System.exit(0);
+    	}
+    	else {
+	        initComponents();
+	        setLocationRelativeTo(null);
+	        setDefaultCloseOperation(EXIT_ON_CLOSE);
+	        setVisible(true);
+	        jugar();
+    	}
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
