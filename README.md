@@ -2,6 +2,8 @@ Gianni Baccino 51507598 - Prueba Técnica
 
 Juego de Preguntas y Respuestas.
 
+El programa se puede ejecutar mediante TriviaQuiz.jar y TriviaQuiz.exe en Windows.
+
 El programa debe ser ejecutado desde Plataforma.java en el paquete gui para usar la versión con interfaz gráfica.
 Para utilizar la versión en consola se debe ejecutar Juego.java en el paquete pyr.
 
@@ -15,5 +17,5 @@ En la versión consola:
 Si las respuestas insertadas no cumplen el formato necesario se consideran incorrectas.
 Si deseas salir del juego introduce la palabra salir, el juego lo aclara.
 
-Es mi primera vez trabajando con el lenguaje java y con los ide eclipse y netbeans que fueron los que utilize.
+Es mi primera vez trabajando con poo, el lenguaje java y con los ide eclipse y netbeans que fueron los que utilize.
 Si hay alguna mala utilizacion del lenguaje se debe a lo anterior.
