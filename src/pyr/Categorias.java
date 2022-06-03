@@ -40,7 +40,7 @@ public class Categorias { //Las categorias consisten en una lista de preguntas s
 				pregunta = new Pregunta("Que pais esta entre Peru y Colombia?", respuesta, '1');
 				preguntas.add(pregunta);
 				
-				respuesta = new Respuestas(new String[] {"Rojo, azul, violeta, negro y blanco","Amarillo, azul, negro, rojo y verde","Naranja, verde, azul, rojo y blanco","Negro, blanco, marrón, amarillo y azul"});
+				respuesta = new Respuestas(new String[] {"Rojo, azul, violeta, negro y blanco","Amarillo, azul, negro, rojo y verde","Naranja, verde, azul, rojo y blanco","Negro, blanco, marron, amarillo y azul"});
 				pregunta = new Pregunta("Cuales son los colores de los cinco anillos olimpicos?", respuesta, '2');
 				preguntas.add(pregunta);
 				

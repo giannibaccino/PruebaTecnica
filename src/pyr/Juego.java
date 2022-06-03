@@ -3,11 +3,11 @@ package pyr;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import javax.swing.*;
 
 public class Juego {
-
-	public static void main(String[] args) { //Se ejecuta el juego
-		int lvl = 1;
+    public static void main(String[] args) { //Se ejecuta el juego
+            int lvl = 1;
 		Premio premioTotal = new Premio(0);
 		
 		Scanner leer = new Scanner(System.in);
